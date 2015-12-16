@@ -23,7 +23,10 @@ size has been reached then roll over.  This all happens for a period of time.  T
 send messages to the server and the client log and the server writes most everything to 
 its own log too.  Most everything but the chunk sizes are configurable via the command line.
 Use -h to see the settings.  The only setting that has really been tested is -a so good
-luck!
+luck!  
+
+FYI - when the threads stop some of the requests encounter broken pipes as the test
+winds down so among many other issues, that has to be looked at.
 
 <pre>
 python StartBenchmarkTestServer.py -h
